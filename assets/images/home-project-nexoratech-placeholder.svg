@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" fill="none">
+  <defs>
+    <linearGradient id="background" x1="70" y1="60" x2="1120" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#21382B"/>
+      <stop offset="1" stop-color="#0E1912"/>
+    </linearGradient>
+    <linearGradient id="window" x1="285" y1="107" x2="960" y2="657" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2F3E9"/>
+      <stop offset="1" stop-color="#DCE5D9"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" stroke="#D8EAD8" stroke-opacity=".07"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="760" fill="url(#background)"/>
+  <rect width="1200" height="760" fill="url(#grid)"/>
+  <circle cx="1030" cy="135" r="164" fill="#8CE0B5" fill-opacity=".08"/>
+  <rect x="188" y="97" width="824" height="565" rx="8" fill="#0B120E" fill-opacity=".3" stroke="#CEE4D0" stroke-opacity=".35" stroke-width="2"/>
+  <rect x="202" y="111" width="796" height="537" rx="4" fill="url(#window)"/>
+  <rect x="202" y="111" width="796" height="55" fill="#18271D"/>
+  <circle cx="225" cy="138" r="5" fill="#D18A77"/>
+  <circle cx="244" cy="138" r="5" fill="#D5B879"/>
+  <circle cx="263" cy="138" r="5" fill="#7DB88B"/>
+  <path d="M295 139H399" stroke="#E9F0E8" stroke-opacity=".7" stroke-width="5"/>
+  <rect x="224" y="186" width="176" height="439" rx="3" fill="#E8ECE3"/>
+  <rect x="247" y="212" width="95" height="7" fill="#607766"/>
+  <rect x="247" y="244" width="124" height="35" rx="2" fill="#D7E8D9"/>
+  <rect x="260" y="258" width="82" height="6" fill="#48765B"/>
+  <path d="M247 305H372M247 337H358M247 369H366M247 401H343M247 452H371M247 484H354M247 516H369" stroke="#BBC7BA" stroke-width="5"/>
+  <rect x="428" y="186" width="546" height="111" rx="3" fill="#FBFCF8"/>
+  <rect x="457" y="211" width="189" height="10" fill="#536B59"/>
+  <rect x="457" y="236" width="285" height="7" fill="#CED6CB"/>
+  <rect x="457" y="256" width="220" height="7" fill="#CED6CB"/>
+  <rect x="428" y="321" width="265" height="143" rx="3" fill="#FBFCF8"/>
+  <rect x="709" y="321" width="265" height="143" rx="3" fill="#FBFCF8"/>
+  <rect x="456" y="348" width="105" height="7" fill="#798A7B"/>
+  <path d="M456 380H660M456 401H630M456 422H650" stroke="#D0D8CD" stroke-width="5"/>
+  <rect x="737" y="348" width="121" height="7" fill="#798A7B"/>
+  <path d="M737 380H941M737 401H918M737 422H933" stroke="#D0D8CD" stroke-width="5"/>
+  <rect x="428" y="488" width="546" height="125" rx="3" fill="#FBFCF8"/>
+  <rect x="456" y="515" width="150" height="7" fill="#798A7B"/>
+  <rect x="456" y="541" width="344" height="7" fill="#D0D8CD"/>
+  <rect x="456" y="562" width="278" height="7" fill="#D0D8CD"/>
+  <rect x="827" y="528" width="112" height="42" rx="3" fill="#236B4A"/>
+  <path d="M857 549H910" stroke="#F1F7EE" stroke-width="5"/>
+  <path d="M82 690H1118" stroke="#DDECDD" stroke-opacity=".2"/>
+  <text x="84" y="728" fill="#C1D4C3" font-family="monospace" font-size="14" letter-spacing="3">NEXORATECH / INTERFACE EM DESENVOLVIMENTO</text>
+</svg>

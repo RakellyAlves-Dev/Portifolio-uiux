@@ -1,0 +1,346 @@
+/* ==========================================================================
+   PORTFÓLIO DE UI/UX DESIGN - WORK / PROJECTS & CASE STUDY
+   ========================================================================== */
+
+.work-page {
+  --work-bg: #0F172A;
+  --work-surface: #19243A;
+  --work-card: #19243A;
+  --work-line: rgba(221, 229, 232, 0.18);
+  --work-text: #F5F7F8;
+  --work-muted: #D0D9E0;
+  --work-mint: #A5D6A7;
+  background: var(--work-bg);
+  color: var(--work-muted);
+}
+
+
+
+.work-page .site-header {
+  background: #F5F7F8;
+  border-bottom: 1px solid var(--work-line);
+}
+
+/* 1. Ajuste da Altura da Navbar */
+.work-page .navbar {
+  height: 76px !important; /* Mude de 100px para 76px */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+/* 2. Ajuste do Tamanho da Marca (Logo) */
+.work-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: var(--work-bg);
+  font-size: 14px !important; /* Padronizado com a Home */
+  font-weight: 600;
+}
+
+.work-brand-mark {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid #59615c;
+  color: var(--work-bg);
+  font-family: var(--font-mono, monospace);
+  font-size: 10px !important;
+  font-weight: 600;
+}
+
+/* 3. Ajuste do Tamanho da Fonte dos Links */
+.work-page .nav-link {
+  color: var(--work-muted);
+  font-size: 14px !important; /* Alinhado com o padrão de 14px da Home */
+  font-weight: 500;
+
+}
+
+/* Alinhamento centralizado do Menu */
+.work-page .navbar {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.work-page .nav-links {
+  display: flex !important;
+  align-items: center !important;
+  gap: clamp(21px, 3vw, 42px);
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Equilíbrio visual no desktop (Garante que fique perfeitamente no centro) */
+@media (min-width: 769px) {
+  .work-page .brand-logo {
+    flex: 1;
+  }
+
+  .work-page .nav-links {
+    flex: 0 0 auto;
+  }
+
+  .work-page .navbar::after {
+    content: "";
+    flex: 1;
+  }
+}
+
+.work-page .nav-link {
+  color: var(--work-bg);
+  font-size: 12px;
+}
+
+.work-page .nav-link.is-active,
+.work-page .nav-link:hover {
+  color: var(--work-mint);
+}
+
+.work-eyebrow {
+  margin: 0;
+  color: var(--work-mint);
+  font-family: var(--font-mono, monospace);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  line-height: 1.65;
+}
+
+/* ==========================================================================
+   NOVA SEÇÃO DE PROJETOS (LAYOUT MODERNO DESTAQUE + 2 COLUNAS)
+   ========================================================================== */
+
+.v2-projects-page {
+  padding-top: 160px !important;
+  padding-bottom: 100px !important;
+  background-color: #0F172A !important;
+  min-height: 100vh;
+}
+
+.v2-projects-header {
+  margin-bottom: 48px !important;
+  max-width: 650px !important;
+}
+
+.v2-projects-header h1 {
+  font-family: var(--font-heading, 'Space Grotesk', sans-serif) !important;
+  font-size: clamp(42px, 6vw, 72px) !important;
+  font-weight: 700 !important;
+  color: #F5F7F8 !important;
+  margin: 12px 0 !important;
+  line-height: 1.05 !important;
+}
+
+.v2-projects-header h1 span {
+  color: #A5D6A7 !important;
+}
+
+.v2-projects-desc {
+  font-size: 16px !important;
+  color: #94A3B8 !important;
+  line-height: 1.6 !important;
+}
+
+/* Grid de Projetos */
+.v2-projects-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 32px !important;
+  width: 100% !important;
+}
+
+.v2-card {
+  background: #19243A !important;
+  border: 1px solid rgba(221, 229, 232, 0.15) !important;
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.v2-card:hover {
+  transform: translateY(-6px) !important;
+  border-color: rgba(165, 214, 167, 0.5) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4) !important;
+}
+
+.v2-card.v2-featured {
+  grid-column: 1 / -1 !important;
+  display: grid !important;
+  grid-template-columns: 1.25fr 0.75fr !important;
+  align-items: center !important;
+}
+
+.v2-card-img-wrap {
+  display: block !important;
+  width: 100% !important;
+  aspect-ratio: 16 / 10 !important;
+  overflow: hidden !important;
+  background-color: #0F172A !important;
+}
+
+.v2-card-img-wrap img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.4s ease !important;
+}
+
+.v2-card:hover .v2-card-img-wrap img {
+  transform: scale(1.03) !important;
+}
+
+.v2-card-info {
+  padding: 32px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+
+.v2-card-tags {
+  display: flex !important;
+  gap: 10px !important;
+  margin-bottom: 16px !important;
+}
+
+.v2-tag-accent {
+  font-family: var(--font-mono, monospace) !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  color: #A5D6A7 !important;
+  background: rgba(165, 214, 167, 0.12) !important;
+  padding: 4px 12px !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(165, 214, 167, 0.25) !important;
+}
+
+.v2-tag-muted {
+  font-family: var(--font-mono, monospace) !important;
+  font-size: 11px !important;
+  color: #94A3B8 !important;
+  padding: 4px 8px !important;
+}
+
+.v2-card-info h2 {
+  font-family: var(--font-heading, 'Space Grotesk', sans-serif) !important;
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  color: #F5F7F8 !important;
+  margin-bottom: 12px !important;
+}
+
+.v2-card-info p {
+  font-size: 14px !important;
+  color: #94A3B8 !important;
+  line-height: 1.6 !important;
+  margin-bottom: 24px !important;
+}
+
+.v2-card-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #A5D6A7 !important;
+  text-decoration: none !important;
+}
+
+.v2-card-btn span {
+  transition: transform 0.2s ease !important;
+}
+
+.v2-card:hover .v2-card-btn span {
+  transform: translate(3px, -3px) !important;
+}
+
+/* ==========================================================================
+   ESTILOS COMPARTILHADOS DE ESTUDO DE CASO (CASE STUDY TEMPLATE)
+   ========================================================================== */
+
+.case-intro {
+  padding: 117px 0 0;
+  background: radial-gradient(ellipse at 79% 25%, rgba(181, 245, 216, 0.035), transparent 40%), #080a09;
+}
+
+.case-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 33px;
+  color: #bbc3bf;
+  font-size: 10px;
+}
+
+.case-back-link span {
+  color: var(--work-mint);
+  font-size: 16px;
+}
+
+.case-intro h1 {
+  margin: 0;
+  color: var(--work-text);
+  font-size: clamp(44px, 7vw, 76px);
+  font-weight: 500;
+  letter-spacing: -0.07em;
+  line-height: 1.05;
+}
+
+.case-section {
+  padding: clamp(62px, 8vw, 96px) 0;
+}
+
+.case-section-dark {
+  background: #101211;
+  color: #a8b0ad;
+}
+
+.case-section-paper {
+  background: #f4f5f2;
+  color: #4e5953;
+}
+
+.case-section-heading h2 {
+  margin: 10px 0 11px;
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE
+   ========================================================================== */
+
+@media (max-width: 900px) {
+  .v2-card.v2-featured {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .v2-projects-page {
+    padding-top: 120px !important;
+  }
+
+  .v2-projects-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .v2-card-info {
+    padding: 20px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work-page *,
+  .work-page *::before,
+  .work-page *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

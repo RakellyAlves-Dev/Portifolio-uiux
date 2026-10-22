@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" fill="none">
+  <defs>
+    <linearGradient id="background" x1="110" y1="42" x2="1042" y2="717" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#25372F"/>
+      <stop offset="1" stop-color="#0D1813"/>
+    </linearGradient>
+    <linearGradient id="device" x1="466" y1="96" x2="748" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2F2E8"/>
+      <stop offset="1" stop-color="#D5E1D5"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="0" cy="0" r="1" gradientTransform="matrix(135 0 0 135 628 303)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B3E4C1" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#B3E4C1" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#E5EFE4" stroke-opacity=".06"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="760" fill="url(#background)"/>
+  <rect width="1200" height="760" fill="url(#grid)"/>
+  <circle cx="627" cy="302" r="170" fill="url(#moon)"/>
+  <circle cx="255" cy="161" r="3" fill="#D4E8D5"/>
+  <circle cx="348" cy="247" r="2" fill="#D4E8D5"/>
+  <circle cx="910" cy="159" r="3" fill="#D4E8D5"/>
+  <circle cx="846" cy="312" r="2" fill="#D4E8D5"/>
+  <circle cx="294" cy="497" r="2" fill="#D4E8D5"/>
+  <circle cx="901" cy="533" r="3" fill="#D4E8D5"/>
+  <path d="M123 615C257 523 366 551 485 615M760 108C868 153 917 220 945 311" stroke="#9FC7A7" stroke-opacity=".3" stroke-width="2"/>
+  <rect x="461" y="79" width="278" height="606" rx="36" fill="#0A100C" stroke="#C4DAC7" stroke-opacity=".5" stroke-width="3"/>
+  <rect x="477" y="96" width="246" height="572" rx="25" fill="url(#device)"/>
+  <rect x="551" y="110" width="98" height="16" rx="8" fill="#1C2921"/>
+  <circle cx="600" cy="290" r="104" fill="#DCE9DC"/>
+  <circle cx="600" cy="290" r="77" fill="#A7C4AC"/>
+  <circle cx="629" cy="272" r="63" fill="#536F59"/>
+  <circle cx="651" cy="251" r="61" fill="#DCE9DC"/>
+  <circle cx="559" cy="259" r="3" fill="#EFF4E8"/>
+  <circle cx="575" cy="306" r="2" fill="#EFF4E8"/>
+  <circle cx="669" cy="314" r="3" fill="#EFF4E8"/>
+  <text x="600" y="405" text-anchor="middle" fill="#203629" font-family="Georgia,serif" font-size="33">Aetheria</text>
+  <text x="600" y="432" text-anchor="middle" fill="#63766A" font-family="monospace" font-size="10" letter-spacing="2">ESPAÇO DE CONCENTRAÇÃO</text>
+  <path d="M535 470H665" stroke="#B8C7B8"/>
+  <path d="M550 491H650M561 509H639" stroke="#ABBBAE" stroke-width="4"/>
+  <rect x="520" y="548" width="160" height="47" rx="3" fill="#285E42"/>
+  <text x="600" y="577" text-anchor="middle" fill="#F2F5ED" font-family="sans-serif" font-size="12">COMEÇAR A EXPLORAR</text>
+  <text x="84" y="704" fill="#C1D4C3" font-family="monospace" font-size="14" letter-spacing="3">AETHERIA / CONCEITO EM DESENVOLVIMENTO</text>
+</svg>

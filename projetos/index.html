@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0F172A">
+  <meta name="description" content="Projetos e estudos de caso de UI/UX Design.">
+  <title>Projetos — Portfólio</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/work.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body class="work-page">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  
+  <!-- CABEÇALHO / NAVBAR -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand-logo work-brand" href="../index.html" aria-label="Início">
+        <span class="work-brand-mark" aria-hidden="true">[SN]</span>
+        <span>[Seu nome profissional]</span>
+      </a>
+      <nav class="nav-links" id="navegacao-principal" aria-label="Navegação principal">
+        <a class="nav-link" href="../index.html">Início</a>
+        <a class="nav-link is-active" href="index.html" aria-current="page">Projetos</a>
+        <a class="nav-link" href="../contato/index.html">Contato</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="navegacao-principal" aria-expanded="false">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- SEÇÃO PRINCIPAL DE PROJETOS -->
+  <main class="v2-projects-page" id="conteudo">
+    <div class="container">
+      
+      <!-- CABEÇALHO DA PÁGINA -->
+      <header class="v2-projects-header">
+        <p class="work-eyebrow">01 / SELEÇÃO DE TRABALHOS</p>
+        <h1>Projetos<span>.</span></h1>
+        <p class="v2-projects-desc">
+          Conceitos e estudos de UX/UI, apresentados pelo problema, processo e decisões de design.
+        </p>
+      </header>
+
+      <!-- GRID DOS CARDS -->
+      <div class="v2-projects-grid">
+
+        <!-- CARD 1: DESTAQUE PRINCIPAL (100% DE LARGURA) -->
+        <article class="v2-card v2-featured">
+          <a href="modelo-estudo-de-caso.html" class="v2-card-img-wrap">
+            <img src="../assets/images/home-project-nexoratech-placeholder.svg" alt="Preview NexoraTech">
+          </a>
+          <div class="v2-card-info">
+            <div class="v2-card-tags">
+              <span class="v2-tag-accent">WEB APP</span>
+              <span class="v2-tag-muted">CONCEITO</span>
+            </div>
+            <h2>NexoraTech</h2>
+            <p>Sistema web para criação e gerenciamento de orçamentos com foco em eficiência e clareza de dados.</p>
+            <a href="modelo-estudo-de-caso.html" class="v2-card-btn">
+              Ver estudo de caso <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- CARD 2: COLUNA ESQUERDA -->
+        <article class="v2-card">
+          <a href="modelo-estudo-de-caso.html" class="v2-card-img-wrap">
+            <img src="../assets/images/home-project-aetheria-placeholder.svg" alt="Preview Aetheria">
+          </a>
+          <div class="v2-card-info">
+            <div class="v2-card-tags">
+              <span class="v2-tag-accent">MOBILE</span>
+              <span class="v2-tag-muted">CONCEITO</span>
+            </div>
+            <h2>Aetheria</h2>
+            <p>Conceito de aplicativo voltado à concentração, rotinas de foco e produtividade diária.</p>
+            <a href="modelo-estudo-de-caso.html" class="v2-card-btn">
+              Ver estudo de caso <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- CARD 3: COLUNA DIREITA -->
+        <article class="v2-card">
+          <a href="modelo-estudo-de-caso.html" class="v2-card-img-wrap">
+            <!-- Usa a mesma imagem de fallback caso project-cover-1.svg não exista na pasta -->
+            <img src="../assets/images/home-workspace-placeholder.svg" alt="Preview Redesign">
+          </a>
+          <div class="v2-card-info">
+            <div class="v2-card-tags">
+              <span class="v2-tag-accent">REDESIGN</span>
+              <span class="v2-tag-muted">PROPOSTA</span>
+            </div>
+            <h2>Redesign UX/UI</h2>
+            <p>Análise e proposta de melhoria para uma experiência digital existente, focando na jornada do usuário.</p>
+            <a href="modelo-estudo-de-caso.html" class="v2-card-btn">
+              Ver estudo de caso <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>
