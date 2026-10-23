@@ -311,6 +311,586 @@
 }
 
 /* ==========================================================================
+   ESTILIZAÇÃO CORRETA E MODERNA — ESTUDO DE CASO (.case-minimal)
+   ========================================================================== */
+
+.case-minimal {
+  background-color: #0F172A !important;
+  color: #D0D9E0 !important;
+}
+
+/* 1. Hero da Página de Estudo de Caso */
+.case-minimal-hero {
+  padding-top: 140px !important;
+  padding-bottom: 60px !important;
+  background: radial-gradient(ellipse at 79% 25%, rgba(165, 214, 167, 0.04), transparent 40%), #0F172A !important;
+}
+
+.case-minimal-back {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  color: #94A3B8 !important;
+  font-size: 13px !important;
+  margin-bottom: 24px !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+}
+
+.case-minimal-back:hover {
+  color: #A5D6A7 !important;
+}
+
+.case-minimal-hero h1 {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: clamp(40px, 6vw, 72px) !important;
+  font-weight: 700 !important;
+  color: #F5F7F8 !important;
+  margin: 12px 0 !important;
+  line-height: 1.1 !important;
+}
+
+.case-minimal-hero .v2-projects-desc {
+  font-size: 16px !important;
+  color: #94A3B8 !important;
+  max-width: 650px !important;
+  margin-bottom: 24px !important;
+}
+
+/* 2. Tags de Ferramentas (Pills) */
+.case-tool-tags {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  margin-bottom: 36px !important;
+}
+
+.case-tool-tags span {
+  font-family: monospace !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  color: #A5D6A7 !important;
+  background: rgba(165, 214, 167, 0.1) !important;
+  padding: 6px 14px !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(165, 214, 167, 0.25) !important;
+  text-transform: uppercase !important;
+}
+
+/* 3. Moldura das Imagens / Mockups */
+.case-minimal-cover,
+.case-minimal-solution-figure {
+  background: #19243A !important;
+  border: 1px solid rgba(221, 229, 232, 0.15) !important;
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4) !important;
+}
+
+.case-minimal-cover img,
+.case-minimal-solution-figure img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+}
+
+.case-minimal-cover figcaption,
+.case-minimal-solution-figure figcaption {
+  padding: 14px 20px !important;
+  background: #19243A !important;
+  border-top: 1px solid rgba(221, 229, 232, 0.1) !important;
+  color: #94A3B8 !important;
+  font-family: monospace !important;
+  font-size: 10px !important;
+  letter-spacing: 0.1em !important;
+}
+
+/* 4. Seções Gerais */
+.case-minimal-section {
+  padding: 80px 0 !important;
+  border-top: 1px solid rgba(221, 229, 232, 0.08) !important;
+}
+
+.case-minimal-section h2 {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: clamp(28px, 4vw, 38px) !important;
+  color: #F5F7F8 !important;
+  margin: 8px 0 24px 0 !important;
+}
+
+/* 5. Grid de Visão Geral (Problema, Objetivo, Papel) */
+.case-minimal-overview-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 24px !important;
+  margin-top: 32px !important;
+}
+
+.case-minimal-overview-grid article {
+  background: #19243A !important;
+  border: 1px solid rgba(221, 229, 232, 0.12) !important;
+  border-radius: 16px !important;
+  padding: 28px !important;
+  transition: transform 0.3s ease, border-color 0.3s ease !important;
+}
+
+.case-minimal-overview-grid article:hover {
+  transform: translateY(-4px) !important;
+  border-color: rgba(165, 214, 167, 0.4) !important;
+}
+
+.case-minimal-overview-grid h3 {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 18px !important;
+  color: #F5F7F8 !important;
+  margin-bottom: 12px !important;
+}
+
+.case-minimal-overview-grid p {
+  color: #94A3B8 !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+}
+
+/* 6. Processo de Design (Steps) */
+.case-minimal-section-heading {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-end !important;
+  margin-bottom: 36px !important;
+}
+
+.case-minimal-section-heading p {
+  color: #94A3B8 !important;
+  font-size: 14px !important;
+  max-width: 400px !important;
+  margin: 0 !important;
+}
+
+.case-minimal-steps {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr) !important;
+  gap: 16px !important;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.case-minimal-steps li {
+  background: #19243A !important;
+  border: 1px solid rgba(221, 229, 232, 0.12) !important;
+  border-radius: 16px !important;
+  padding: 24px 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+}
+
+.case-minimal-steps span {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  background: rgba(165, 214, 167, 0.1);
+  border: 1px solid rgba(165, 214, 167, 0.25);
+  border-radius: 50%;
+  color: #A5D6A7;
+}
+
+.case-minimal-steps span svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+}
+
+.case-minimal-steps h3 {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 16px !important;
+  color: #F5F7F8 !important;
+  margin: 0 !important;
+}
+
+/* 7. Seção de Solução e Aprendizados */
+.case-minimal-solution-copy {
+  color: #94A3B8 !important;
+  font-size: 15px !important;
+  margin-bottom: 24px !important;
+}
+
+.case-minimal-image-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-top: 20px !important;
+  color: #A5D6A7 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+
+.case-minimal-learning-inner {
+  display: grid !important;
+  grid-template-columns: 1fr 2fr !important;
+  gap: 40px !important;
+  align-items: center !important;
+}
+
+.case-minimal-learning-inner p[data-case-learning] {
+  background: #19243A !important;
+  border: 1px solid rgba(221, 229, 232, 0.12) !important;
+  border-radius: 16px !important;
+  padding: 28px !important;
+  color: #94A3B8 !important;
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+  margin: 0 !important;
+}
+
+/* 8. Contato / CTA Final */
+.case-minimal-contact {
+  background: #19243A !important;
+  border-top: 1px solid rgba(221, 229, 232, 0.12) !important;
+  padding: 80px 0 !important;
+}
+
+.case-minimal-contact-inner {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.case-minimal-contact h2 {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 36px !important;
+  color: #F5F7F8 !important;
+  margin: 8px 0 0 0 !important;
+}
+
+.case-minimal-contact-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  background: #FF8A65 !important;
+  color: #0F172A !important;
+  padding: 16px 28px !important;
+  border-radius: 12px !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  transition: background 0.2s ease, transform 0.2s ease !important;
+}
+
+.case-minimal-contact-link:hover {
+  background: #F47D59 !important;
+  transform: translateY(-2px) !important;
+}
+
+/* 9. Paginação Inferior */
+.case-minimal-pagination {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 24px !important;
+  padding: 60px 20px !important;
+}
+
+.case-minimal-pagination a {
+  background: #19243A !important;
+  border: 1px solid rgba(221, 229, 232, 0.12) !important;
+  border-radius: 16px !important;
+  padding: 24px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+  text-decoration: none !important;
+  transition: border-color 0.3s ease !important;
+}
+
+.case-minimal-pagination a:hover {
+  border-color: rgba(165, 214, 167, 0.5) !important;
+}
+
+.case-minimal-pagination span {
+  font-family: monospace !important;
+  font-size: 10px !important;
+  color: #94A3B8 !important;
+  letter-spacing: 0.1em !important;
+}
+
+.case-minimal-pagination strong {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 16px !important;
+  color: #F5F7F8 !important;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .case-minimal-overview-grid,
+  .case-minimal-steps {
+    grid-template-columns: 1fr !important;
+  }
+  .case-minimal-learning-inner,
+  .case-minimal-contact-inner {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .case-minimal-section-heading {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+  }
+}
+
+/* ==========================================================================
+   FORMULÁRIO E FAQ DE CONTATO - DESIGN SYSTEM SERENE CREATIVE
+   ========================================================================== */
+
+/* Grid do Formulário */
+.contact-form-section {
+  padding: 60px 0 100px 0 !important;
+  background-color: #0F172A !important;
+}
+
+.contact-grid-wrapper {
+  display: grid !important;
+  grid-template-columns: 1fr 1.2fr !important;
+  gap: 60px !important;
+  align-items: start !important;
+}
+
+.contact-info-col h2 {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: clamp(32px, 5vw, 48px) !important;
+  color: #F5F7F8 !important;
+  margin: 12px 0 16px 0 !important;
+  line-height: 1.1 !important;
+}
+
+.contact-info-col h2 span {
+  color: #A5D6A7 !important;
+}
+
+.contact-subtitle {
+  font-size: 16px !important;
+  color: #94A3B8 !important;
+  line-height: 1.6 !important;
+  margin-bottom: 32px !important;
+}
+
+.contact-direct-links {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+}
+
+.direct-link-item {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  padding: 16px 20px !important;
+  background: #19243A !important;
+  border: 1px solid rgba(221, 229, 232, 0.12) !important;
+  border-radius: 12px !important;
+  text-decoration: none !important;
+  transition: border-color 0.3s ease, transform 0.3s ease !important;
+}
+
+.direct-link-item:hover {
+  border-color: rgba(165, 214, 167, 0.5) !important;
+  transform: translateX(6px) !important;
+}
+
+.link-icon {
+  display: grid !important;
+  width: 40px !important;
+  height: 40px !important;
+  place-items: center !important;
+  background: rgba(165, 214, 167, 0.1) !important;
+  color: #A5D6A7 !important;
+  border-radius: 8px !important;
+  font-weight: 700 !important;
+}
+
+.direct-link-item small {
+  display: block !important;
+  font-size: 11px !important;
+  color: #94A3B8 !important;
+}
+
+.direct-link-item strong {
+  font-size: 14px !important;
+  color: #F5F7F8 !important;
+}
+
+/* Card do Formulário */
+.contact-form-card {
+  background: #19243A !important;
+  border: 1px solid rgba(221, 229, 232, 0.15) !important;
+  border-radius: 20px !important;
+  padding: 36px !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
+}
+
+.contact-form {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+}
+
+.form-group {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+}
+
+.form-group label {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: #F5F7F8 !important;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100 !important;
+  padding: 14px 16px !important;
+  background-color: #0F172A !important;
+  border: 1px solid rgba(221, 229, 232, 0.2) !important;
+  border-radius: 10px !important;
+  color: #F5F7F8 !important;
+  font-family: inherit !important;
+  font-size: 14px !important;
+  outline: none !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #A5D6A7 !important;
+  box-shadow: 0 0 0 3px rgba(165, 214, 167, 0.15) !important;
+}
+
+.btn-submit-coral {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  padding: 16px 28px !important;
+  background-color: #FF8A65 !important;
+  color: #0F172A !important;
+  border: none !important;
+  border-radius: 12px !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  transition: background 0.2s ease, transform 0.2s ease !important;
+  margin-top: 10px !important;
+}
+
+.btn-submit-coral:hover {
+  background-color: #F47D59 !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Estilo do FAQ / Accordion */
+.contact-faq-section {
+  padding: 80px 0 120px 0 !important;
+  background-color: #121A2B !important;
+  border-top: 1px solid rgba(221, 229, 232, 0.1) !important;
+}
+
+.faq-header {
+  margin-bottom: 48px !important;
+  max-width: 600px !important;
+}
+
+.faq-header h2 {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: clamp(32px, 5vw, 44px) !important;
+  color: #F5F7F8 !important;
+  margin: 12px 0 !important;
+}
+
+.faq-header h2 span {
+  color: #A5D6A7 !important;
+}
+
+.faq-header p {
+  color: #94A3B8 !important;
+  font-size: 15px !important;
+}
+
+.faq-accordion {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+  max-width: 850px !important;
+}
+
+.faq-item {
+  background: #19243A !important;
+  border: 1px solid rgba(221, 229, 232, 0.12) !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  transition: border-color 0.3s ease !important;
+}
+
+.faq-item[open] {
+  border-color: rgba(165, 214, 167, 0.4) !important;
+}
+
+.faq-question {
+  padding: 22px 28px !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #F5F7F8 !important;
+  cursor: pointer !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  list-style: none !important;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none !important;
+}
+
+.faq-icon {
+  font-size: 20px !important;
+  color: #A5D6A7 !important;
+  transition: transform 0.3s ease !important;
+}
+
+.faq-item[open] .faq-icon {
+  transform: rotate(45deg) !important;
+}
+
+.faq-answer {
+  padding: 0 28px 24px 28px !important;
+  color: #94A3B8 !important;
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+}
+
+/* Responsividade para Telas Menores */
+@media (max-width: 900px) {
+  .contact-grid-wrapper {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .contact-form-card {
+    padding: 24px !important;
+  }
+}
+
+/* ==========================================================================
    RESPONSIVIDADE
    ========================================================================== */
 
@@ -344,3 +924,4 @@
     animation-duration: 0.01ms !important;
   }
 }
+

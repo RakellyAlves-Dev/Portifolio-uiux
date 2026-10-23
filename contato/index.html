@@ -24,18 +24,130 @@
     <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="navegacao-principal" aria-expanded="false"><span class="menu-bar"></span><span class="menu-bar"></span><span class="menu-bar"></span></button>
   </div></header>
   <main id="conteudo">
-    <section class="page-intro section-deep-green"><div class="container page-intro-content reveal"><p class="hero-eyebrow">Contato</p><h1 class="hero-title">Vamos <span class="text-gradient-mint">conversar?</span></h1><p class="hero-subtitle">[Texto introdutório para recrutadores, possíveis clientes e colaboradores.]</p></div></section>
-    <section class="section section-dark"><div class="container">
-      <div class="contact-layout">
-        <div class="contact-copy reveal"><p class="section-header-tag">Fale comigo</p><h2 class="section-title">[Título ou convite para contato]</h2><p>[Adicione uma mensagem pessoal e indique os assuntos ou oportunidades sobre os quais gostaria de conversar.]</p><a class="btn btn-primary btn-lg" href="mailto:seu.email@exemplo.com">Enviar e-mail <span aria-hidden="true">↗</span></a></div>
-        <div class="contact-channels-grid reveal" aria-label="Canais de contato">
-          <a class="contact-card" href="mailto:seu.email@exemplo.com"><span class="contact-icon-wrap" aria-hidden="true">@</span><span class="contact-card-title">E-mail</span><span class="contact-card-handle">[E-mail profissional]</span><span class="btn-link">Enviar mensagem <span aria-hidden="true">→</span></span></a>
-          <div class="contact-card contact-card-placeholder"><span class="contact-icon-wrap" aria-hidden="true">in</span><span class="contact-card-title">LinkedIn</span><span class="contact-card-handle">[Link do LinkedIn]</span><span class="contact-card-hint">Adicione a URL do seu perfil para ativar este link.</span></div>
-          <div class="contact-card contact-card-placeholder"><span class="contact-icon-wrap" aria-hidden="true">Bē</span><span class="contact-card-title">Behance</span><span class="contact-card-handle">[Link do Behance]</span><span class="contact-card-hint">Adicione a URL do seu perfil para ativar este link.</span></div>
+  <!-- SEÇÃO DE FORMULÁRIO DE CONTATO + INFORMAÇÕES -->
+  <section class="contact-form-section">
+    <div class="container contact-grid-wrapper">
+      
+      <!-- Lado Esquerdo: Mensagem e Links Diretos -->
+      <div class="contact-info-col"><br>
+        <span class="work-eyebrow">FALE COMIGO</span>
+        <h2>Vamos tirar sua ideia do papel<span>.</span></h2>
+        <p class="contact-subtitle">
+          Preencha o formulário ou mande uma mensagem direta para conversarmos sobre novos projetos, vagas de UI/UX ou parcerias.
+        </p>
+
+        <div class="contact-direct-links">
+          <a href="mailto:seuemail@dominio.com" class="direct-link-item">
+            <span class="link-icon">✉</span>
+            <div>
+              <small>E-mail direto</small>
+              <strong>seuemail@dominio.com</strong>
+            </div>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="direct-link-item">
+            <span class="link-icon">in</span>
+            <div>
+              <small>LinkedIn</small>
+              <strong>Rakelly Alves</strong>
+            </div>
+          </a>
         </div>
       </div>
-    </div></section>
-    <section class="section section-light"><div class="container section-action-inline"><div><p class="section-header-tag">Portfólio</p><h2 class="section-title">Quer conhecer alguns projetos?</h2></div><a class="btn btn-secondary" href="../projetos/index.html">Explorar projetos <span aria-hidden="true">→</span></a></div></section>
+
+      <!-- Lado Direito: Formulário de Mensagem -->
+      <div class="contact-form-card">
+        <form class="contact-form" action="#" method="POST" id="form-contato">
+          <div class="form-group">
+            <label for="nome">Seu nome *</label>
+            <input type="text" id="nome" name="nome" placeholder="Como posso te chamar?" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Seu e-mail *</label>
+            <input type="email" id="email" name="email" placeholder="nome@empresa.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto">
+              <option value="projeto">Novo Projeto / Freelance</option>
+              <option value="vaga">Oportunidade de Trabalho (CLT/PJ)</option>
+              <option value="mentoria">Dúvida / Outros</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem *</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte um pouco sobre o seu projeto ou necessidade..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit-coral">
+            Enviar mensagem <span>↗</span>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE PERGUNTAS E RESPOSTAS (FAQ) -->
+  <section class="contact-faq-section">
+    <div class="container">
+      <div class="faq-header">
+        <span class="work-eyebrow">DÚVIDAS FREQUENTES</span>
+        <h2>Perguntas & Respostas<span>.</span></h2>
+        <p>Respostas rápidas sobre meu processo de trabalho e disponibilidade.</p>
+      </div>
+
+      <div class="faq-accordion">
+        
+        <!-- Pergunta 1 -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Qual é o seu prazo médio para entrega de um projeto de UI/UX?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>O tempo varia conforme o escopo do projeto. Redesigns de pequenas landing pages levam cerca de 1 a 2 semanas, enquanto sistemas web complexos e aplicativos mobile completos podem levar de 4 a 8 semanas.</p>
+          </div>
+        </details>
+
+        <!-- Pergunta 2 -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Você também faz o desenvolvimento do site (Front-end)?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Sim! Além de desenhar toda a experiência (UI/UX no Figma), desenvolvo interfaces web modernas e responsivas utilizando HTML, CSS e JavaScript funcional.</p>
+          </div>
+        </details>
+
+        <!-- Pergunta 3 -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Como funciona o seu processo de trabalho?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Meu fluxo se divide em 4 etapas: 1. Descoberta e alinhamento de objetivos; 2. Pesquisa de UX e prototipagem de baixa fidelidade; 3. Design de Interface (UI) e testes; 4. Entrega de style guide, arquivos no Figma e/ou código funcional.</p>
+          </div>
+        </details>
+
+        <!-- Pergunta 4 -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Você está disponível para contratação em tempo integral?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Sim, estou aberta a propostas de trabalho remoto ou híbrido, seja em modelo CLT ou PJ, além de projetos freelances pontuais.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
   </main>
   <footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand"><a class="brand-logo" href="../index.html"><span class="brand-dot" aria-hidden="true"></span><span>[Seu nome profissional]</span></a><p>[Uma frase curta sobre sua prática de design.]</p></div><div class="footer-nav-col"><h2>Navegação</h2><ul class="footer-links-list"><li><a href="../index.html">Início</a></li><li><a href="../projetos/index.html">Projetos</a></li><li><a href="index.html">Contato</a></li></ul></div><div class="footer-nav-col"><h2>Redes profissionais</h2><ul class="footer-links-list"><li><span>[Link do LinkedIn — adicionar URL]</span></li><li><span>[Link do Behance — adicionar URL]</span></li></ul></div></div><div class="footer-bottom"><p>© <span data-current-year>2026</span> [Seu nome profissional]. [Direitos autorais]</p><a class="btn-link" href="../index.html">Voltar ao início ↑</a></div></div></footer>
 </body>

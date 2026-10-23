@@ -479,6 +479,125 @@ button {
   transform: translateY(0);
 }
 
+/* Shared desktop navbar geometry and typography. */
+body.home-page .site-header,
+body.work-page .site-header {
+  background: rgba(245, 247, 248, 0.97);
+  border-bottom: 1px solid rgba(120, 144, 156, 0.24);
+}
+
+body.home-page .navbar,
+body.work-page .navbar {
+  position: relative;
+  display: flex;
+  height: 76px !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body.home-page .brand-logo,
+body.work-page .brand-logo {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 11px;
+  color: #0F172A;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+body.home-page .home-brand-mark,
+body.work-page .work-brand-mark {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  place-items: center;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+body.home-page .home-brand-name {
+  color: #0F172A;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+body.home-page .nav-links,
+body.work-page .nav-links {
+  position: absolute;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  gap: clamp(21px, 3vw, 42px);
+  margin: 0;
+  transform: translateX(-50%);
+}
+
+body.home-page .nav-link,
+body.work-page .nav-link {
+  color: #0F172A;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+body.home-page .nav-link.is-active,
+body.home-page .nav-link:hover,
+body.work-page .nav-link.is-active,
+body.work-page .nav-link:hover {
+  color: #A5D6A7;
+}
+
+body.home-page .nav-link::after,
+body.work-page .nav-link::after {
+  background-color: #A5D6A7;
+}
+
+body.home-page .work-header-cta,
+body.work-page .work-header-cta {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-left: auto;
+  padding: 8px 0 8px 17px;
+  border-left: 1px solid rgba(120, 144, 156, 0.24);
+  color: #0F172A;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+body.home-page .work-header-cta span,
+body.work-page .work-header-cta span {
+  color: #78909C;
+  font-size: 15px;
+}
+
+body.work-page .navbar::after {
+  display: none;
+  flex: 0 0 auto;
+  content: none;
+}
+
+@media (max-width: 800px) {
+  body.home-page .navbar {
+    height: 76px !important;
+  }
+
+  body.home-page .nav-links {
+    top: 76px;
+    left: 0;
+    height: calc(100dvh - 76px);
+    margin: 0;
+    transform: translateY(-100%);
+  }
+
+  body.home-page .nav-links.is-open {
+    transform: translateY(0);
+  }
+}
+
 /* Botão Secundário */
 .btn-secondary {
   background-color: var(--color-bg-surface-elevated);
