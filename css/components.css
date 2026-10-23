@@ -12,7 +12,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: rgba(10, 14, 13, 0.82);
+  background-color: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--color-border-subtle);
@@ -26,7 +26,7 @@
   z-index: 1100;
   padding: var(--space-sm) var(--space-md);
   border-radius: var(--radius-sm);
-  background: var(--color-mint);
+  background: var(--color-primary);
   color: var(--color-text-inverse);
   font-weight: 700;
   transform: translateY(-160%);
@@ -37,9 +37,9 @@
 }
 
 .site-header.is-scrolled {
-  background-color: rgba(8, 10, 9, 0.96);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-  border-bottom-color: rgba(181, 245, 216, 0.2);
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+  border-bottom-color: var(--color-border-subtle);
 }
 
 .page-intro {
@@ -90,8 +90,8 @@
   align-items: center;
   justify-content: center;
   background:
-    radial-gradient(ellipse at 25% 30%, rgba(181, 245, 216, 0.06), transparent 55%),
-    linear-gradient(145deg, #141715, #080a09);
+    radial-gradient(ellipse at 25% 30%, rgba(251, 113, 133, 0.05), transparent 55%),
+    linear-gradient(145deg, #F8FAFC, #F1F5F9);
 }
 
 .project-cover-placeholder .placeholder-box {
@@ -120,10 +120,10 @@
 .brand-dot {
   width: 9px;
   height: 9px;
-  background-color: var(--color-mint);
+  background-color: var(--color-primary);
   border-radius: var(--radius-full);
   display: inline-block;
-  box-shadow: 0 0 10px var(--color-mint);
+  box-shadow: 0 0 10px rgba(244, 63, 94, 0.4);
 }
 
 .contact-layout {
@@ -153,7 +153,7 @@
 
 .contact-card-placeholder:hover {
   transform: none;
-  background: rgba(16, 18, 17, 0.82);
+  background: var(--color-bg-card);
   border-color: var(--color-border-subtle);
   box-shadow: none;
 }
@@ -190,13 +190,13 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--color-mint);
+  background-color: var(--color-primary);
   border-radius: 2px;
   transition: width var(--transition-fast);
 }
 
 .nav-link:hover {
-  color: var(--color-text-primary);
+  color: var(--color-primary);
 }
 
 .nav-link:hover::after,
@@ -205,7 +205,7 @@
 }
 
 .nav-link.is-active {
-  color: var(--color-mint);
+  color: var(--color-primary);
 }
 
 /* Badge de Disponibilidade na Navbar */
@@ -223,9 +223,9 @@
   border-radius: var(--radius-full);
   font-size: var(--font-size-xs);
   font-weight: 600;
-  background-color: rgba(181, 245, 216, 0.06);
-  border: 1px solid var(--color-mint-border);
-  color: var(--color-mint-light);
+  background-color: var(--color-rose-subtle);
+  border: 1px solid var(--color-rose-border);
+  color: var(--color-primary);
 }
 
 .mobile-status-badge {
@@ -235,7 +235,7 @@
 .status-dot {
   width: 8px;
   height: 8px;
-  background-color: var(--color-mint);
+  background-color: var(--color-primary);
   border-radius: var(--radius-full);
   position: relative;
 }
@@ -249,7 +249,7 @@
   width: 100%;
   height: 100%;
   border-radius: var(--radius-full);
-  background-color: var(--color-mint);
+  background-color: var(--color-primary);
   animation: pulse-ring 2s infinite ease-out;
 }
 
@@ -274,13 +274,13 @@
   height: 44px;
   border-radius: var(--radius-md);
   border: 1px solid var(--color-border-subtle);
-  background-color: var(--color-bg-surface);
+  background-color: var(--color-bg-card);
   cursor: pointer;
   transition: all var(--transition-fast);
 }
 
 .menu-toggle:hover {
-  border-color: var(--color-mint-border);
+  border-color: var(--color-border-hover);
 }
 
 .menu-bar {
@@ -325,7 +325,7 @@
   transform: translateX(-50%);
   width: 700px;
   height: 700px;
-  background: radial-gradient(circle, rgba(181, 245, 216, 0.045) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(251, 113, 133, 0.05) 0%, transparent 65%);
   pointer-events: none;
   z-index: 0;
 }
@@ -351,9 +351,9 @@
   gap: var(--space-xs);
   padding: 0.35rem 0.85rem;
   border-radius: var(--radius-full);
-  background-color: rgba(181, 245, 216, 0.06);
-  border: 1px solid var(--color-mint-border);
-  color: var(--color-mint);
+  background-color: var(--color-rose-subtle);
+  border: 1px solid var(--color-rose-border);
+  color: var(--color-primary);
   font-size: var(--font-size-xs);
   font-weight: 600;
   text-transform: uppercase;
@@ -375,7 +375,7 @@
 }
 
 .hero-professional-title {
-  color: var(--color-mint-light);
+  color: var(--color-text-secondary);
   font-size: clamp(1.2rem, 2vw, 1.55rem);
   font-weight: 600;
   line-height: 1.4;
@@ -383,7 +383,7 @@
 }
 
 .hero-title .text-gradient-mint {
-  background: linear-gradient(135deg, #ffffff, #a5d6a7); /* ou as tuas cores do gradiente */
+  background: linear-gradient(135deg, #0F172A 30%, #F43F5E 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -437,11 +437,11 @@
 /* Elemento Visual Decorativo Hero */
 .hero-visual-card {
   position: relative;
-  background: linear-gradient(145deg, #131d1a 0%, #0c1412 100%);
-  border: 1px solid var(--color-mint-border);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-xl);
   padding: var(--space-xl);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), var(--shadow-mint-glow);
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
   display: flex;
   flex-direction: column;
   gap: var(--space-lg);
@@ -464,7 +464,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(15, 23, 42, 0.15);
 }
 
 .window-dot:nth-child(1) { background-color: #ff5f56; }
@@ -472,7 +472,7 @@
 .window-dot:nth-child(3) { background-color: #27c93f; }
 
 .visual-preview-canvas {
-  background: #080a09;
+  background: var(--color-bg-main);
   border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -484,13 +484,14 @@
   bottom: -15px;
   right: -15px;
   background-color: var(--color-bg-surface-elevated);
-  border: 1px solid var(--color-mint-border);
+  border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-lg);
   padding: 0.75rem 1.15rem;
   display: flex;
   align-items: center;
   gap: var(--space-sm);
   box-shadow: var(--shadow-md);
+  color: var(--color-text-primary);
 }
 
 /* --------------------------------------------------------------------------
@@ -515,15 +516,15 @@
 
 .project-card:hover {
   transform: translateY(-6px);
-  border-color: var(--color-mint-border);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), 0 0 24px rgba(181, 245, 216, 0.06);
+  border-color: var(--color-border-hover);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08), 0 0 24px rgba(251, 113, 133, 0.08);
   background: var(--color-bg-card-hover);
 }
 
 .project-cover-wrap {
   width: 100%;
   aspect-ratio: 16 / 10;
-  background: #101211;
+  background: #E2E8F0;
   position: relative;
   overflow: hidden;
   border-bottom: 1px solid var(--color-border-subtle);
@@ -544,15 +545,15 @@
   position: absolute;
   top: var(--space-md);
   left: var(--space-md);
-  background-color: rgba(10, 14, 13, 0.85);
+  background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid var(--color-border-medium);
+  border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-full);
   padding: 0.3rem 0.75rem;
   font-size: var(--font-size-xs);
   font-weight: 600;
-  color: var(--color-mint);
+  color: var(--color-primary);
   letter-spacing: 0.04em;
   z-index: 2;
 }
@@ -573,7 +574,7 @@
 }
 
 .project-card:hover .project-title {
-  color: var(--color-mint);
+  color: var(--color-primary);
 }
 
 .project-description {
@@ -636,7 +637,7 @@
   height: 140px;
   border-radius: var(--radius-full);
   margin: 0 auto var(--space-lg) auto;
-  border: 2px solid var(--color-mint-border);
+  border: 2px solid var(--color-rose-border);
   padding: 4px;
   background: var(--color-bg-surface-elevated);
   overflow: hidden;
@@ -657,7 +658,7 @@
 
 .profile-role {
   font-size: var(--font-size-sm);
-  color: var(--color-mint);
+  color: var(--color-primary);
   font-weight: 600;
   margin-bottom: var(--space-md);
 }
@@ -689,7 +690,7 @@
 }
 
 .pillar-card:hover {
-  border-color: var(--color-mint-border);
+  border-color: var(--color-border-hover);
   transform: translateY(-3px);
 }
 
@@ -697,12 +698,12 @@
   width: 40px;
   height: 40px;
   border-radius: var(--radius-md);
-  background-color: var(--color-mint-subtle);
-  border: 1px solid var(--color-mint-border);
+  background-color: var(--color-rose-subtle);
+  border: 1px solid var(--color-rose-border);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-mint);
+  color: var(--color-primary);
   margin-bottom: var(--space-md);
 }
 
@@ -747,7 +748,7 @@
 }
 
 .skill-category-icon {
-  color: var(--color-mint);
+  color: var(--color-primary);
 }
 
 .skill-category-title {
@@ -768,7 +769,7 @@
 }
 
 .skill-check-icon {
-  color: var(--color-mint);
+  color: var(--color-primary);
   margin-top: 3px;
   flex-shrink: 0;
 }
@@ -793,14 +794,14 @@
    6. SEÇÃO DE CONTATO & CTA
    -------------------------------------------------------------------------- */
 .contact-cta-box {
-  background: var(--color-bg-deep-green-gradient);
-  border: 1px solid var(--color-mint-border);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-xl);
   padding: clamp(2.5rem, 6vw, 4.5rem);
   text-align: center;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
 }
 
 .contact-cta-box::before {
@@ -824,8 +825,7 @@
 }
 
 .contact-card {
-  background: rgba(16, 18, 17, 0.82);
-  backdrop-filter: blur(10px);
+  background: var(--color-bg-surface-elevated);
   border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
@@ -838,10 +838,10 @@
 }
 
 .contact-card:hover {
-  border-color: var(--color-mint-border);
+  border-color: var(--color-border-hover);
   transform: translateY(-4px);
-  background: rgba(20, 23, 21, 0.95);
-  box-shadow: 0 10px 30px rgba(181, 245, 216, 0.06);
+  background: var(--color-bg-surface-elevated);
+  box-shadow: 0 10px 30px rgba(251, 113, 133, 0.1);
 }
 
 .contact-card-placeholder {
@@ -851,7 +851,7 @@
 .contact-card-placeholder:hover {
   border-color: var(--color-border-subtle);
   transform: none;
-  background: rgba(16, 18, 17, 0.82);
+  background: var(--color-bg-surface-elevated);
   box-shadow: none;
 }
 
@@ -859,12 +859,12 @@
   width: 52px;
   height: 52px;
   border-radius: var(--radius-md);
-  background-color: var(--color-mint-subtle);
-  border: 1px solid var(--color-mint-border);
+  background-color: var(--color-rose-subtle);
+  border: 1px solid var(--color-rose-border);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-mint);
+  color: var(--color-primary);
   margin-bottom: var(--space-md);
 }
 
@@ -885,7 +885,7 @@
    7. RODAPÉ (FOOTER)
    -------------------------------------------------------------------------- */
 .site-footer {
-  background-color: #060908;
+  background-color: var(--color-bg-main);
   border-top: 1px solid var(--color-border-subtle);
   padding: var(--space-3xl) 0 var(--space-xl) 0;
   color: var(--color-text-muted);
@@ -927,7 +927,7 @@
 }
 
 .footer-links-list a:hover {
-  color: var(--color-mint);
+  color: var(--color-primary);
 }
 
 .footer-bottom {
@@ -959,9 +959,10 @@
 }
 
 .social-icon-btn:hover {
-  border-color: var(--color-mint);
-  color: var(--color-mint);
+  border-color: var(--color-border-hover);
+  color: var(--color-primary);
   transform: translateY(-2px);
+  background-color: var(--color-bg-main);
 }
 
 /* --------------------------------------------------------------------------
@@ -1016,7 +1017,7 @@
   position: sticky;
   top: 76px;
   z-index: 100;
-  background-color: rgba(10, 14, 13, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-border-subtle);
@@ -1044,8 +1045,8 @@
 
 .case-nav-link:hover,
 .case-nav-link.is-active {
-  color: var(--color-mint);
-  background-color: var(--color-mint-subtle);
+  color: var(--color-primary);
+  background-color: var(--color-rose-subtle);
 }
 
 /* Blocos de Estudo de Caso (Problema vs Solução) */
@@ -1057,15 +1058,15 @@
 }
 
 .problem-card {
-  background-color: rgba(239, 68, 68, 0.05);
-  border: 1px solid rgba(239, 68, 68, 0.2);
+  background-color: rgba(244, 63, 94, 0.05);
+  border: 1px solid rgba(244, 63, 94, 0.2);
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
 }
 
 .solution-card {
-  background-color: rgba(181, 245, 216, 0.05);
-  border: 1px solid var(--color-mint-border);
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
 }
@@ -1090,7 +1091,7 @@
 .screen-card-img-wrap {
   width: 100%;
   aspect-ratio: 4 / 3;
-  background-color: #0b110f;
+  background-color: #E2E8F0;
   border-bottom: 1px solid var(--color-border-subtle);
   display: flex;
   align-items: center;
@@ -1132,9 +1133,14 @@
 }
 
 .case-nav-btn:hover {
-  border-color: var(--color-mint-border);
+  border-color: var(--color-border-hover);
   transform: translateY(-3px);
   background-color: var(--color-bg-surface-elevated);
+}
+
+.case-nav-btn.text-right {
+  text-align: right;
+  align-items: flex-end;
 }
 
 .case-nav-btn.text-right {
