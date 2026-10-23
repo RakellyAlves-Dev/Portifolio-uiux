@@ -903,6 +903,95 @@
 }
 
 /* ==========================================================================
+   ESTILIZAÇÃO DO RODAPÉ (WORK FOOTER) — TEMA CLARO E ORGANIZADO
+   ========================================================================== */
+
+.work-footer {
+  background-color: #F8FAFC !important;
+  border-top: 1px solid #E2E8F0 !important;
+  padding: 60px 0 30px 0 !important;
+  color: #0F172A !important;
+  margin-top: 80px !important;
+}
+
+.work-footer-inner {
+  display: grid !important;
+  grid-template-columns: 2fr 1fr 1fr !important;
+  gap: 40px !important;
+  padding-bottom: 40px !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+}
+
+/* Marca e Subtítulo */
+.work-footer-brand {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+
+.work-footer-tagline {
+  font-size: 13px !important;
+  color: #64748B !important;
+  margin: 0 !important;
+}
+
+/* Títulos das Colunas */
+.footer-title {
+  display: block !important;
+  font-family: monospace !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #FB7185 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  margin-bottom: 16px !important;
+}
+
+/* Links de Navegação e Redes */
+.work-footer-nav nav,
+.work-footer-socials .social-links {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+.work-footer-nav a,
+.work-footer-socials a {
+  color: #475569 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease, transform 0.2s ease !important;
+  width: fit-content !important;
+}
+
+.work-footer-nav a:hover,
+.work-footer-socials a:hover {
+  color: #FB7185 !important;
+  transform: translateX(3px) !important;
+}
+
+/* Linha de Copyright do Rodapé */
+.work-footer-bottom {
+  padding-top: 24px !important;
+  text-align: center !important;
+}
+
+.work-footer-bottom p {
+  font-size: 13px !important;
+  color: #94A3B8 !important;
+  margin: 0 !important;
+}
+
+/* Responsividade para Dispositivos Móveis */
+@media (max-width: 768px) {
+  .work-footer-inner {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+}
+
+/* ==========================================================================
    RESPONSIVIDADE
    ========================================================================== */
 

@@ -252,7 +252,13 @@
   font-size: 12px;
   font-weight: 700;
   border-radius: 12px;
-  transition: background var(--transition-normal), color var(--transition-normal), transform var(--transition-normal);
+  box-shadow: 0 4px 14px rgba(244, 63, 94, 0.2);
+  transition: background 0.25s ease,
+              color 0.25s ease,
+              border-color 0.25s ease,
+              transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.25s ease;
+  will-change: transform;
 }
 
 .home-button:hover {
@@ -260,10 +266,22 @@
   background: #E11D48;
   border-color: #E11D48;
   color: #FFFFFF;
+  box-shadow: 0 6px 20px rgba(244, 63, 94, 0.35);
+}
+
+.home-button:active {
+  transform: scale(0.97) !important;
 }
 
 .home-button span {
   font-size: 16px;
+  display: inline-block;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.home-button:hover span {
+  transform: translate(3px, -3px);
 }
 
 .home-hero-note {

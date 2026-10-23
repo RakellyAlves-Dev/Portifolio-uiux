@@ -34,6 +34,7 @@
   --color-rose-hover: #F43F5E;
   --color-rose-subtle: rgba(244, 63, 94, 0.08);
   --color-rose-border: rgba(251, 113, 133, 0.3);
+  --color-accent-rose: #FB7185;
 
   /* Variáveis de compatibilidade mapeadas para Serene Bloom */
   --color-coral: #F43F5E;
@@ -467,10 +468,31 @@ button {
   font-weight: 600;
   letter-spacing: -0.01em;
   border-radius: var(--radius-md);
-  transition: all var(--transition-normal);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+              background-color 0.25s ease,
+              border-color 0.25s ease,
+              box-shadow 0.25s ease,
+              color 0.25s ease;
   text-decoration: none;
   position: relative;
   white-space: nowrap;
+}
+
+.btn:active {
+  transform: scale(0.97) !important;
+}
+
+/* Transição do ícone de seta nos botões */
+.btn span,
+.btn-primary span {
+  display: inline-block;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.btn:hover span,
+.btn-primary:hover span {
+  transform: translate(3px, -3px);
 }
 
 /* Botão Primário */
@@ -489,7 +511,7 @@ button {
 }
 
 .btn-primary:active {
-  transform: translateY(0);
+  transform: scale(0.97) !important;
 }
 
 /* Shared desktop navbar geometry and typography. */
@@ -787,7 +809,12 @@ body.work-page .navbar::after {
   background: transparent;
   color: var(--color-text-muted);
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, background-color, color, box-shadow;
+}
+
+.skills-toggle-btn:active {
+  transform: scale(0.97) !important;
 }
 
 .skills-toggle-btn.active {
@@ -812,7 +839,19 @@ body.work-page .navbar::after {
   width: 100%;
 }
 
-/* Estado base de cada card */
+/* Animação Keyframes: Fade-in suave com elevação leve de 8px */
+@keyframes skillFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estado base de cada card de habilidade */
 .skill-card {
   background: var(--color-bg-card);
   border: 1px solid var(--color-border-subtle);
@@ -823,30 +862,47 @@ body.work-page .navbar::after {
   font-size: 0.95rem;
   color: var(--color-text-primary);
   box-shadow: 0 2px 6px rgba(15, 23, 42, 0.02);
-  
-  /* PROPRIEDADE CHAVE PARA A ANIMAÇÃO */
-  transition: opacity 0.4s ease, transform 0.4s ease, filter 0.4s ease, border-color 0.3s ease;
-  will-change: opacity, transform, filter;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              filter 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, opacity, box-shadow;
   opacity: 1;
-  transform: scale(1);
-  filter: blur(0);
+  transform: translateY(0);
 }
 
-/* Hover nos cards ativos */
+/* Cards ativos com animação suave de subida e fade-in ao alternar */
+.skill-card:not(.dimmed) {
+  animation: skillFadeInUp 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Hover nos cards de habilidade: flutuação, sombra e brilho suave (manta/glow) */
 .skill-card:not(.dimmed):hover {
-  transform: translateY(-3px) scale(1.02);
-  border-color: var(--color-border-hover);
-  box-shadow: 0 8px 20px rgba(251, 113, 133, 0.15);
+  transform: translateY(-4px) !important;
+  border-color: var(--color-accent-rose, #FB7185) !important;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06), 0 0 16px rgba(251, 113, 133, 0.12) !important;
+  background-color: #FFFFFF;
+  color: var(--color-text-primary);
 }
 
-/* ESTADO DESFOCADO / INATIVO (Animação de sumir/desfocar) */
-.skill-card.dimmed {
-  opacity: 0.2;            /* Transparência suave */
-  filter: blur(1px);       /* Desfoca levemente */
-  transform: scale(0.95);  /* Reduz o tamanho de forma fluida */
-  pointer-events: none;    /* Impede interações nos cards inativos */
+/* Efeito de pressionar nos cards */
+.skill-card:not(.dimmed):active {
+  transform: translateY(-2px) scale(0.98) !important;
 }
-/* Card da Foto Central */
+
+/* ESTADO DESFOCADO / INATIVO (Animação suave de transição) */
+.skill-card.dimmed {
+  opacity: 0.2;
+  filter: blur(1px);
+  transform: scale(0.96);
+  pointer-events: none;
+  animation: none;
+}
+
+/* Card Central de Perfil (Rakelly) */
 .skills-avatar-card {
   background: var(--color-bg-card);
   border-radius: 20px;
@@ -854,11 +910,16 @@ body.work-page .navbar::after {
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, box-shadow;
 }
 
 .skills-avatar-card:hover {
   transform: translateY(-4px);
+  border-color: rgba(251, 113, 133, 0.4);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.08), 0 0 24px rgba(251, 113, 133, 0.18);
 }
 
 .avatar-image-container {
@@ -874,6 +935,11 @@ body.work-page .navbar::after {
   width: 120px;
   height: 120px;
   color: #94A3B8;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skills-avatar-card:hover .avatar-placeholder {
+  transform: scale(1.03);
 }
 
 .avatar-add-btn {
@@ -884,19 +950,29 @@ body.work-page .navbar::after {
   height: 36px;
   border-radius: 50%;
   border: 2px solid var(--color-primary);
-  background: transparent;
+  background: #FFFFFF;
   color: var(--color-primary);
   font-size: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
 }
 
 .avatar-add-btn:hover {
   background-color: var(--color-primary);
   color: var(--color-text-inverse);
+  transform: rotate(90deg) scale(1.1);
+  box-shadow: 0 4px 14px rgba(244, 63, 94, 0.35);
+}
+
+.avatar-add-btn:active {
+  transform: rotate(90deg) scale(1.02);
 }
 
 .avatar-info {
