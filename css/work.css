@@ -3,13 +3,13 @@
    ========================================================================== */
 
 .work-page {
-  --work-bg: #0F172A;
-  --work-surface: #19243A;
-  --work-card: #19243A;
-  --work-line: rgba(221, 229, 232, 0.18);
-  --work-text: #F5F7F8;
-  --work-muted: #D0D9E0;
-  --work-mint: #A5D6A7;
+  --work-bg: #FFFFFF;
+  --work-surface: #F1F5F9;
+  --work-card: #F1F5F9;
+  --work-line: #E2E8F0;
+  --work-text: #0F172A;
+  --work-muted: #475569;
+  --work-mint: #F43F5E;
   background: var(--work-bg);
   color: var(--work-muted);
 }
@@ -17,7 +17,7 @@
 
 
 .work-page .site-header {
-  background: #F5F7F8;
+  background: rgba(255, 255, 255, 0.96);
   border-bottom: 1px solid var(--work-line);
 }
 
@@ -34,7 +34,7 @@
   display: flex;
   align-items: center;
   gap: 11px;
-  color: var(--work-bg);
+  color: var(--work-text);
   font-size: 14px !important; /* Padronizado com a Home */
   font-weight: 600;
 }
@@ -44,8 +44,8 @@
   width: 34px;
   height: 34px;
   place-items: center;
-  border: 1px solid #59615c;
-  color: var(--work-bg);
+  border: 1px solid #CBD5E1;
+  color: var(--work-text);
   font-family: var(--font-mono, monospace);
   font-size: 10px !important;
   font-weight: 600;
@@ -53,7 +53,7 @@
 
 /* 3. Ajuste do Tamanho da Fonte dos Links */
 .work-page .nav-link {
-  color: var(--work-muted);
+  color: #334155;
   font-size: 14px !important; /* Alinhado com o padrão de 14px da Home */
   font-weight: 500;
 
@@ -91,7 +91,7 @@
 }
 
 .work-page .nav-link {
-  color: var(--work-bg);
+  color: #334155;
   font-size: 12px;
 }
 
@@ -116,7 +116,7 @@
 .v2-projects-page {
   padding-top: 160px !important;
   padding-bottom: 100px !important;
-  background-color: #0F172A !important;
+  background-color: #FFFFFF !important;
   min-height: 100vh;
 }
 
@@ -129,18 +129,18 @@
   font-family: var(--font-heading, 'Space Grotesk', sans-serif) !important;
   font-size: clamp(42px, 6vw, 72px) !important;
   font-weight: 700 !important;
-  color: #F5F7F8 !important;
+  color: #0F172A !important;
   margin: 12px 0 !important;
   line-height: 1.05 !important;
 }
 
 .v2-projects-header h1 span {
-  color: #A5D6A7 !important;
+  color: #F43F5E !important;
 }
 
 .v2-projects-desc {
   font-size: 16px !important;
-  color: #94A3B8 !important;
+  color: #475569 !important;
   line-height: 1.6 !important;
 }
 
@@ -153,8 +153,8 @@
 }
 
 .v2-card {
-  background: #19243A !important;
-  border: 1px solid rgba(221, 229, 232, 0.15) !important;
+  background: #F1F5F9 !important;
+  border: 1px solid #E2E8F0 !important;
   border-radius: 20px !important;
   overflow: hidden !important;
   display: flex !important;
@@ -164,8 +164,8 @@
 
 .v2-card:hover {
   transform: translateY(-6px) !important;
-  border-color: rgba(165, 214, 167, 0.5) !important;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4) !important;
+  border-color: #FB7185 !important;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08) !important;
 }
 
 .v2-card.v2-featured {
@@ -180,7 +180,7 @@
   width: 100% !important;
   aspect-ratio: 16 / 10 !important;
   overflow: hidden !important;
-  background-color: #0F172A !important;
+  background-color: #E2E8F0 !important;
 }
 
 .v2-card-img-wrap img {
@@ -211,17 +211,17 @@
   font-family: var(--font-mono, monospace) !important;
   font-size: 11px !important;
   font-weight: 600 !important;
-  color: #A5D6A7 !important;
-  background: rgba(165, 214, 167, 0.12) !important;
+  color: #F43F5E !important;
+  background: rgba(244, 63, 94, 0.08) !important;
   padding: 4px 12px !important;
   border-radius: 999px !important;
-  border: 1px solid rgba(165, 214, 167, 0.25) !important;
+  border: 1px solid rgba(244, 63, 94, 0.25) !important;
 }
 
 .v2-tag-muted {
   font-family: var(--font-mono, monospace) !important;
   font-size: 11px !important;
-  color: #94A3B8 !important;
+  color: #64748B !important;
   padding: 4px 8px !important;
 }
 
@@ -229,13 +229,13 @@
   font-family: var(--font-heading, 'Space Grotesk', sans-serif) !important;
   font-size: 26px !important;
   font-weight: 700 !important;
-  color: #F5F7F8 !important;
+  color: #0F172A !important;
   margin-bottom: 12px !important;
 }
 
 .v2-card-info p {
   font-size: 14px !important;
-  color: #94A3B8 !important;
+  color: #475569 !important;
   line-height: 1.6 !important;
   margin-bottom: 24px !important;
 }
@@ -246,7 +246,7 @@
   gap: 8px !important;
   font-size: 14px !important;
   font-weight: 600 !important;
-  color: #A5D6A7 !important;
+  color: #F43F5E !important;
   text-decoration: none !important;
 }
 
@@ -264,7 +264,7 @@
 
 .case-intro {
   padding: 117px 0 0;
-  background: radial-gradient(ellipse at 79% 25%, rgba(181, 245, 216, 0.035), transparent 40%), #080a09;
+  background: radial-gradient(ellipse at 79% 25%, rgba(251, 113, 133, 0.06), transparent 40%), #FFFFFF;
 }
 
 .case-back-link {
@@ -272,12 +272,12 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 33px;
-  color: #bbc3bf;
+  color: #64748B;
   font-size: 10px;
 }
 
 .case-back-link span {
-  color: var(--work-mint);
+  color: #F43F5E;
   font-size: 16px;
 }
 
@@ -295,13 +295,13 @@
 }
 
 .case-section-dark {
-  background: #101211;
-  color: #a8b0ad;
+  background: #F1F5F9;
+  color: #334155;
 }
 
 .case-section-paper {
-  background: #f4f5f2;
-  color: #4e5953;
+  background: #F8FAFC;
+  color: #334155;
 }
 
 .case-section-heading h2 {
@@ -315,22 +315,22 @@
    ========================================================================== */
 
 .case-minimal {
-  background-color: #0F172A !important;
-  color: #D0D9E0 !important;
+  background-color: #FFFFFF !important;
+  color: #334155 !important;
 }
 
 /* 1. Hero da Página de Estudo de Caso */
 .case-minimal-hero {
   padding-top: 140px !important;
   padding-bottom: 60px !important;
-  background: radial-gradient(ellipse at 79% 25%, rgba(165, 214, 167, 0.04), transparent 40%), #0F172A !important;
+  background: radial-gradient(ellipse at 79% 25%, rgba(251, 113, 133, 0.06), transparent 40%), #FFFFFF !important;
 }
 
 .case-minimal-back {
   display: inline-flex !important;
   align-items: center !important;
   gap: 8px !important;
-  color: #94A3B8 !important;
+  color: #64748B !important;
   font-size: 13px !important;
   margin-bottom: 24px !important;
   text-decoration: none !important;
@@ -338,21 +338,21 @@
 }
 
 .case-minimal-back:hover {
-  color: #A5D6A7 !important;
+  color: #F43F5E !important;
 }
 
 .case-minimal-hero h1 {
   font-family: 'Space Grotesk', sans-serif !important;
   font-size: clamp(40px, 6vw, 72px) !important;
   font-weight: 700 !important;
-  color: #F5F7F8 !important;
+  color: #0F172A !important;
   margin: 12px 0 !important;
   line-height: 1.1 !important;
 }
 
 .case-minimal-hero .v2-projects-desc {
   font-size: 16px !important;
-  color: #94A3B8 !important;
+  color: #475569 !important;
   max-width: 650px !important;
   margin-bottom: 24px !important;
 }
@@ -369,23 +369,23 @@
   font-family: monospace !important;
   font-size: 11px !important;
   font-weight: 600 !important;
-  color: #A5D6A7 !important;
-  background: rgba(165, 214, 167, 0.1) !important;
+  color: #F43F5E !important;
+  background: rgba(244, 63, 94, 0.08) !important;
   padding: 6px 14px !important;
   border-radius: 999px !important;
-  border: 1px solid rgba(165, 214, 167, 0.25) !important;
+  border: 1px solid rgba(244, 63, 94, 0.25) !important;
   text-transform: uppercase !important;
 }
 
 /* 3. Moldura das Imagens / Mockups */
 .case-minimal-cover,
 .case-minimal-solution-figure {
-  background: #19243A !important;
-  border: 1px solid rgba(221, 229, 232, 0.15) !important;
+  background: #F1F5F9 !important;
+  border: 1px solid #E2E8F0 !important;
   border-radius: 20px !important;
   overflow: hidden !important;
   margin: 0 !important;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4) !important;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08) !important;
 }
 
 .case-minimal-cover img,
@@ -398,9 +398,9 @@
 .case-minimal-cover figcaption,
 .case-minimal-solution-figure figcaption {
   padding: 14px 20px !important;
-  background: #19243A !important;
-  border-top: 1px solid rgba(221, 229, 232, 0.1) !important;
-  color: #94A3B8 !important;
+  background: #F1F5F9 !important;
+  border-top: 1px solid #E2E8F0 !important;
+  color: #64748B !important;
   font-family: monospace !important;
   font-size: 10px !important;
   letter-spacing: 0.1em !important;
@@ -409,13 +409,13 @@
 /* 4. Seções Gerais */
 .case-minimal-section {
   padding: 80px 0 !important;
-  border-top: 1px solid rgba(221, 229, 232, 0.08) !important;
+  border-top: 1px solid #E2E8F0 !important;
 }
 
 .case-minimal-section h2 {
   font-family: 'Space Grotesk', sans-serif !important;
   font-size: clamp(28px, 4vw, 38px) !important;
-  color: #F5F7F8 !important;
+  color: #0F172A !important;
   margin: 8px 0 24px 0 !important;
 }
 
@@ -428,27 +428,28 @@
 }
 
 .case-minimal-overview-grid article {
-  background: #19243A !important;
-  border: 1px solid rgba(221, 229, 232, 0.12) !important;
+  background: #F1F5F9 !important;
+  border: 1px solid #E2E8F0 !important;
   border-radius: 16px !important;
   padding: 28px !important;
-  transition: transform 0.3s ease, border-color 0.3s ease !important;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 .case-minimal-overview-grid article:hover {
   transform: translateY(-4px) !important;
-  border-color: rgba(165, 214, 167, 0.4) !important;
+  border-color: #FB7185 !important;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.06) !important;
 }
 
 .case-minimal-overview-grid h3 {
   font-family: 'Space Grotesk', sans-serif !important;
   font-size: 18px !important;
-  color: #F5F7F8 !important;
+  color: #0F172A !important;
   margin-bottom: 12px !important;
 }
 
 .case-minimal-overview-grid p {
-  color: #94A3B8 !important;
+  color: #475569 !important;
   font-size: 14px !important;
   line-height: 1.6 !important;
   margin: 0 !important;
@@ -463,7 +464,7 @@
 }
 
 .case-minimal-section-heading p {
-  color: #94A3B8 !important;
+  color: #475569 !important;
   font-size: 14px !important;
   max-width: 400px !important;
   margin: 0 !important;
@@ -479,13 +480,18 @@
 }
 
 .case-minimal-steps li {
-  background: #19243A !important;
-  border: 1px solid rgba(221, 229, 232, 0.12) !important;
+  background: #F1F5F9 !important;
+  border: 1px solid #E2E8F0 !important;
   border-radius: 16px !important;
   padding: 24px 20px !important;
   display: flex !important;
   flex-direction: column !important;
   gap: 16px !important;
+  transition: transform 0.3s ease, border-color 0.3s ease !important;
+}
+
+.case-minimal-steps li:hover {
+  border-color: #FB7185 !important;
 }
 
 .case-minimal-steps span {
@@ -493,10 +499,10 @@
   width: 40px;
   height: 40px;
   place-items: center;
-  background: rgba(165, 214, 167, 0.1);
-  border: 1px solid rgba(165, 214, 167, 0.25);
+  background: rgba(244, 63, 94, 0.08);
+  border: 1px solid rgba(244, 63, 94, 0.25);
   border-radius: 50%;
-  color: #A5D6A7;
+  color: #F43F5E;
 }
 
 .case-minimal-steps span svg {
@@ -510,13 +516,13 @@
 .case-minimal-steps h3 {
   font-family: 'Space Grotesk', sans-serif !important;
   font-size: 16px !important;
-  color: #F5F7F8 !important;
+  color: #0F172A !important;
   margin: 0 !important;
 }
 
 /* 7. Seção de Solução e Aprendizados */
 .case-minimal-solution-copy {
-  color: #94A3B8 !important;
+  color: #475569 !important;
   font-size: 15px !important;
   margin-bottom: 24px !important;
 }
@@ -526,7 +532,7 @@
   align-items: center !important;
   gap: 8px !important;
   margin-top: 20px !important;
-  color: #A5D6A7 !important;
+  color: #F43F5E !important;
   font-size: 14px !important;
   font-weight: 600 !important;
   text-decoration: none !important;
@@ -540,11 +546,11 @@
 }
 
 .case-minimal-learning-inner p[data-case-learning] {
-  background: #19243A !important;
-  border: 1px solid rgba(221, 229, 232, 0.12) !important;
+  background: #F1F5F9 !important;
+  border: 1px solid #E2E8F0 !important;
   border-radius: 16px !important;
   padding: 28px !important;
-  color: #94A3B8 !important;
+  color: #334155 !important;
   font-size: 14px !important;
   line-height: 1.7 !important;
   margin: 0 !important;
@@ -552,8 +558,8 @@
 
 /* 8. Contato / CTA Final */
 .case-minimal-contact {
-  background: #19243A !important;
-  border-top: 1px solid rgba(221, 229, 232, 0.12) !important;
+  background: #F8FAFC !important;
+  border-top: 1px solid #E2E8F0 !important;
   padding: 80px 0 !important;
 }
 
@@ -566,7 +572,7 @@
 .case-minimal-contact h2 {
   font-family: 'Space Grotesk', sans-serif !important;
   font-size: 36px !important;
-  color: #F5F7F8 !important;
+  color: #0F172A !important;
   margin: 8px 0 0 0 !important;
 }
 
@@ -574,19 +580,21 @@
   display: inline-flex !important;
   align-items: center !important;
   gap: 12px !important;
-  background: #FF8A65 !important;
-  color: #0F172A !important;
+  background: #F43F5E !important;
+  color: #FFFFFF !important;
   padding: 16px 28px !important;
   border-radius: 12px !important;
   font-weight: 700 !important;
   font-size: 14px !important;
   text-decoration: none !important;
-  transition: background 0.2s ease, transform 0.2s ease !important;
+  box-shadow: 0 4px 14px rgba(244, 63, 94, 0.25) !important;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease !important;
 }
 
 .case-minimal-contact-link:hover {
-  background: #F47D59 !important;
+  background: #FB7185 !important;
   transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(244, 63, 94, 0.35) !important;
 }
 
 /* 9. Paginação Inferior */
@@ -598,32 +606,33 @@
 }
 
 .case-minimal-pagination a {
-  background: #19243A !important;
-  border: 1px solid rgba(221, 229, 232, 0.12) !important;
+  background: #F1F5F9 !important;
+  border: 1px solid #E2E8F0 !important;
   border-radius: 16px !important;
   padding: 24px !important;
   display: flex !important;
   flex-direction: column !important;
   gap: 8px !important;
   text-decoration: none !important;
-  transition: border-color 0.3s ease !important;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 .case-minimal-pagination a:hover {
-  border-color: rgba(165, 214, 167, 0.5) !important;
+  border-color: #FB7185 !important;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06) !important;
 }
 
 .case-minimal-pagination span {
   font-family: monospace !important;
   font-size: 10px !important;
-  color: #94A3B8 !important;
+  color: #64748B !important;
   letter-spacing: 0.1em !important;
 }
 
 .case-minimal-pagination strong {
   font-family: 'Space Grotesk', sans-serif !important;
   font-size: 16px !important;
-  color: #F5F7F8 !important;
+  color: #0F172A !important;
 }
 
 /* Responsividade */
@@ -653,7 +662,7 @@
 /* Grid do Formulário */
 .contact-form-section {
   padding: 60px 0 100px 0 !important;
-  background-color: #0F172A !important;
+  background-color: #FFFFFF !important;
 }
 
 .contact-grid-wrapper {
@@ -666,18 +675,18 @@
 .contact-info-col h2 {
   font-family: 'Space Grotesk', sans-serif !important;
   font-size: clamp(32px, 5vw, 48px) !important;
-  color: #F5F7F8 !important;
+  color: #0F172A !important;
   margin: 12px 0 16px 0 !important;
   line-height: 1.1 !important;
 }
 
 .contact-info-col h2 span {
-  color: #A5D6A7 !important;
+  color: #F43F5E !important;
 }
 
 .contact-subtitle {
   font-size: 16px !important;
-  color: #94A3B8 !important;
+  color: #475569 !important;
   line-height: 1.6 !important;
   margin-bottom: 32px !important;
 }
@@ -693,15 +702,15 @@
   align-items: center !important;
   gap: 16px !important;
   padding: 16px 20px !important;
-  background: #19243A !important;
-  border: 1px solid rgba(221, 229, 232, 0.12) !important;
+  background: #F1F5F9 !important;
+  border: 1px solid #E2E8F0 !important;
   border-radius: 12px !important;
   text-decoration: none !important;
   transition: border-color 0.3s ease, transform 0.3s ease !important;
 }
 
 .direct-link-item:hover {
-  border-color: rgba(165, 214, 167, 0.5) !important;
+  border-color: #FB7185 !important;
   transform: translateX(6px) !important;
 }
 
@@ -710,8 +719,8 @@
   width: 40px !important;
   height: 40px !important;
   place-items: center !important;
-  background: rgba(165, 214, 167, 0.1) !important;
-  color: #A5D6A7 !important;
+  background: rgba(244, 63, 94, 0.08) !important;
+  color: #F43F5E !important;
   border-radius: 8px !important;
   font-weight: 700 !important;
 }
@@ -719,21 +728,21 @@
 .direct-link-item small {
   display: block !important;
   font-size: 11px !important;
-  color: #94A3B8 !important;
+  color: #64748B !important;
 }
 
 .direct-link-item strong {
   font-size: 14px !important;
-  color: #F5F7F8 !important;
+  color: #0F172A !important;
 }
 
 /* Card do Formulário */
 .contact-form-card {
-  background: #19243A !important;
-  border: 1px solid rgba(221, 229, 232, 0.15) !important;
+  background: #F1F5F9 !important;
+  border: 1px solid #E2E8F0 !important;
   border-radius: 20px !important;
   padding: 36px !important;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.06) !important;
 }
 
 .contact-form {
@@ -751,18 +760,18 @@
 .form-group label {
   font-size: 13px !important;
   font-weight: 500 !important;
-  color: #F5F7F8 !important;
+  color: #0F172A !important;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
-  width: 100 !important;
+  width: 100% !important;
   padding: 14px 16px !important;
-  background-color: #0F172A !important;
-  border: 1px solid rgba(221, 229, 232, 0.2) !important;
+  background-color: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
   border-radius: 10px !important;
-  color: #F5F7F8 !important;
+  color: #0F172A !important;
   font-family: inherit !important;
   font-size: 14px !important;
   outline: none !important;
@@ -772,8 +781,8 @@
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: #A5D6A7 !important;
-  box-shadow: 0 0 0 3px rgba(165, 214, 167, 0.15) !important;
+  border-color: #F43F5E !important;
+  box-shadow: 0 0 0 3px rgba(244, 63, 94, 0.15) !important;
 }
 
 .btn-submit-coral {
@@ -782,27 +791,29 @@
   justify-content: center !important;
   gap: 10px !important;
   padding: 16px 28px !important;
-  background-color: #FF8A65 !important;
-  color: #0F172A !important;
+  background-color: #F43F5E !important;
+  color: #FFFFFF !important;
   border: none !important;
   border-radius: 12px !important;
   font-size: 15px !important;
   font-weight: 700 !important;
   cursor: pointer !important;
-  transition: background 0.2s ease, transform 0.2s ease !important;
+  box-shadow: 0 4px 14px rgba(244, 63, 94, 0.25) !important;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease !important;
   margin-top: 10px !important;
 }
 
 .btn-submit-coral:hover {
-  background-color: #F47D59 !important;
+  background-color: #FB7185 !important;
   transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(244, 63, 94, 0.35) !important;
 }
 
 /* Estilo do FAQ / Accordion */
 .contact-faq-section {
   padding: 80px 0 120px 0 !important;
-  background-color: #121A2B !important;
-  border-top: 1px solid rgba(221, 229, 232, 0.1) !important;
+  background-color: #F8FAFC !important;
+  border-top: 1px solid #E2E8F0 !important;
 }
 
 .faq-header {
@@ -813,16 +824,16 @@
 .faq-header h2 {
   font-family: 'Space Grotesk', sans-serif !important;
   font-size: clamp(32px, 5vw, 44px) !important;
-  color: #F5F7F8 !important;
+  color: #0F172A !important;
   margin: 12px 0 !important;
 }
 
 .faq-header h2 span {
-  color: #A5D6A7 !important;
+  color: #F43F5E !important;
 }
 
 .faq-header p {
-  color: #94A3B8 !important;
+  color: #475569 !important;
   font-size: 15px !important;
 }
 
@@ -834,15 +845,16 @@
 }
 
 .faq-item {
-  background: #19243A !important;
-  border: 1px solid rgba(221, 229, 232, 0.12) !important;
+  background: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
   border-radius: 16px !important;
   overflow: hidden !important;
-  transition: border-color 0.3s ease !important;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 .faq-item[open] {
-  border-color: rgba(165, 214, 167, 0.4) !important;
+  border-color: #FB7185 !important;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05) !important;
 }
 
 .faq-question {
@@ -850,7 +862,7 @@
   font-family: 'Space Grotesk', sans-serif !important;
   font-size: 17px !important;
   font-weight: 600 !important;
-  color: #F5F7F8 !important;
+  color: #0F172A !important;
   cursor: pointer !important;
   display: flex !important;
   justify-content: space-between !important;
@@ -864,7 +876,7 @@
 
 .faq-icon {
   font-size: 20px !important;
-  color: #A5D6A7 !important;
+  color: #F43F5E !important;
   transition: transform 0.3s ease !important;
 }
 
@@ -874,7 +886,7 @@
 
 .faq-answer {
   padding: 0 28px 24px 28px !important;
-  color: #94A3B8 !important;
+  color: #475569 !important;
   font-size: 15px !important;
   line-height: 1.7 !important;
 }
@@ -887,6 +899,95 @@
   }
   .contact-form-card {
     padding: 24px !important;
+  }
+}
+
+/* ==========================================================================
+   ESTILIZAÇÃO DO RODAPÉ (WORK FOOTER) — TEMA CLARO E ORGANIZADO
+   ========================================================================== */
+
+.work-footer {
+  background-color: #F8FAFC !important;
+  border-top: 1px solid #E2E8F0 !important;
+  padding: 60px 0 30px 0 !important;
+  color: #0F172A !important;
+  margin-top: 80px !important;
+}
+
+.work-footer-inner {
+  display: grid !important;
+  grid-template-columns: 2fr 1fr 1fr !important;
+  gap: 40px !important;
+  padding-bottom: 40px !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+}
+
+/* Marca e Subtítulo */
+.work-footer-brand {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+
+.work-footer-tagline {
+  font-size: 13px !important;
+  color: #64748B !important;
+  margin: 0 !important;
+}
+
+/* Títulos das Colunas */
+.footer-title {
+  display: block !important;
+  font-family: monospace !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #FB7185 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  margin-bottom: 16px !important;
+}
+
+/* Links de Navegação e Redes */
+.work-footer-nav nav,
+.work-footer-socials .social-links {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+.work-footer-nav a,
+.work-footer-socials a {
+  color: #475569 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease, transform 0.2s ease !important;
+  width: fit-content !important;
+}
+
+.work-footer-nav a:hover,
+.work-footer-socials a:hover {
+  color: #FB7185 !important;
+  transform: translateX(3px) !important;
+}
+
+/* Linha de Copyright do Rodapé */
+.work-footer-bottom {
+  padding-top: 24px !important;
+  text-align: center !important;
+}
+
+.work-footer-bottom p {
+  font-size: 13px !important;
+  color: #94A3B8 !important;
+  margin: 0 !important;
+}
+
+/* Responsividade para Dispositivos Móveis */
+@media (max-width: 768px) {
+  .work-footer-inner {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
   }
 }
 
